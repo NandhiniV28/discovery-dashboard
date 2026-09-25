@@ -366,6 +366,15 @@ document.getElementById('tile-total-transitions').addEventListener('click', () =
 document.getElementById('tile-total-alloc').addEventListener('click', () => drilldownFromTransitions(currentCycle._issues.filter(t => t.alloc_days > 0), `3S ${currentCycle.label} (current), allocation > 0`));
 
 // ---------- refresh from Jira ----------
+const isGithubPages = location.hostname.endsWith('github.io');
+if (isGithubPages) {
+  const btn = document.getElementById('refresh-btn');
+  btn.textContent = '↻ Run refresh workflow →';
+  btn.addEventListener('click', () => {
+    window.open('https://github.com/NandhiniV28/discovery-dashboard/actions/workflows/refresh.yml', '_blank');
+  });
+  document.getElementById('refresh-status').textContent = 'Auto-refreshes weekday mornings via GitHub Actions. Click to trigger manually (needs repo access).';
+} else {
 document.getElementById('refresh-btn').addEventListener('click', async () => {
   const btn = document.getElementById('refresh-btn');
   const status = document.getElementById('refresh-status');
@@ -384,6 +393,7 @@ document.getElementById('refresh-btn').addEventListener('click', async () => {
     btn.disabled = false;
   }
 });
+}
 
 function setGeneratedAt() {
   document.getElementById('generated-at').textContent =
