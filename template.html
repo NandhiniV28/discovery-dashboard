@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Discovery Dashboard — Communications Services</title>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page-plane:     #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --series-1:       #2a78d6;
+    --series-3:       #1baf7a;
+    --in-progress:    #cde2fb;
+    --accent-wash:    rgba(42,120,214,0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --page-plane:     #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --gridline:       #2c2c2a;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --series-1:       #3987e5;
+      --series-3:       #199e70;
+      --in-progress:    #184f95;
+      --accent-wash:    rgba(57,135,229,0.10);
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--page-plane); color: var(--text-primary); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 24px 64px; }
+  header { margin-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+  header h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+  header .meta { color: var(--text-secondary); font-size: 13px; }
+  header .meta a { color: var(--series-1); text-decoration: none; }
+  .sources { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+
+  #refresh-btn {
+    background: var(--series-1); color: #fff; border: none; border-radius: 8px;
+    padding: 9px 16px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;
+  }
+  #refresh-btn:disabled { opacity: 0.6; cursor: default; }
+  #refresh-status { font-size: 11px; color: var(--text-muted); margin-top: 6px; text-align: right; max-width: 220px; }
+
+  .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+  .stat-tile {
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px 18px; cursor: pointer; transition: box-shadow 0.15s;
+  }
+  .stat-tile:hover { box-shadow: 0 2px 10px var(--border); }
+  .stat-tile .label { font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; }
+  .stat-tile .value { font-size: 30px; font-weight: 600; line-height: 1.1; }
+  .stat-tile .unit { font-size: 14px; font-weight: 400; color: var(--text-secondary); margin-left: 4px; }
+  .stat-tile .sub { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+  .stat-tile .click-hint { font-size: 10px; color: var(--series-1); margin-top: 6px; opacity: 0.8; }
+
+  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 20px 20px 12px; margin-bottom: 20px; }
+  .card h2 { font-size: 15px; font-weight: 600; margin: 0 0 2px; }
+  .card .card-sub { font-size: 12px; color: var(--text-secondary); margin-bottom: 12px; }
+  .badge-progress { display: inline-block; font-size: 10px; font-weight: 600; color: var(--text-secondary); background: var(--in-progress); border-radius: 4px; padding: 1px 6px; margin-left: 6px; }
+
+  svg { display: block; }
+  .axis-label { font-size: 10px; fill: var(--text-muted); }
+  .gridline { stroke: var(--gridline); stroke-width: 1; }
+  .baseline { stroke: var(--baseline); stroke-width: 1; }
+
+  .tooltip {
+    position: absolute; pointer-events: none; background: var(--text-primary); color: var(--surface-1);
+    font-size: 12px; padding: 6px 9px; border-radius: 6px; line-height: 1.4; opacity: 0; transition: opacity 0.1s;
+    z-index: 10; white-space: nowrap;
+  }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: right; padding: 7px 10px; border-bottom: 1px solid var(--gridline); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child, th.left, td.left { text-align: left; font-variant-numeric: normal; }
+  th { color: var(--text-secondary); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.02em; }
+  tr:last-child td { border-bottom: none; }
+  tr.in-progress td { color: var(--text-secondary); }
+  tr.clickable-row { cursor: pointer; }
+  tr.clickable-row:hover td { background: var(--accent-wash); }
+
+  .note { font-size: 12px; color: var(--text-muted); margin-top: 10px; line-height: 1.5; }
+
+  #drilldown { display: none; }
+  #drilldown.open { display: block; }
+  #drilldown .card { border-color: var(--series-1); }
+  #drilldown-close {
+    background: none; border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary);
+    font-size: 12px; padding: 4px 10px; cursor: pointer; float: right;
+  }
+  #drilldown-table a { color: var(--series-1); text-decoration: none; }
+  #drilldown-table a:hover { text-decoration: underline; }
+
+  @media (max-width: 900px) {
+    .kpi-row { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap viz-root">
+
+  <header>
+    <div>
+      <h1>Discovery Dashboard — Communications Services Zone</h1>
+      <div class="meta">
+        Source of truth: <a href="https://talkdesk.atlassian.net/jira/dashboards/24628" target="_blank">Jira: Voice Platform - OKR Discovery</a>
+        · Jira project <strong>TDI</strong>, Zone = Communications Services
+      </div>
+      <div class="sources" id="generated-at"></div>
+    </div>
+    <div>
+      <button id="refresh-btn">↻ Refresh from Jira</button>
+      <div class="sources" id="refresh-status"></div>
+    </div>
+  </header>
+
+  <div class="kpi-row">
+    <div class="stat-tile" id="tile-in-discovery">
+      <div class="label">TDIs currently in "In Discovery"</div>
+      <div class="value" id="kpi-in-discovery">–</div>
+      <div class="sub">Live snapshot</div>
+      <div class="click-hint">Click to see the list →</div>
+    </div>
+    <div class="stat-tile" id="tile-avg-duration">
+      <div class="label">Avg. time in Discovery (this 3S)</div>
+      <div class="value" id="kpi-avg-duration">–<span class="unit">days</span></div>
+      <div class="sub" id="kpi-avg-duration-sub"></div>
+      <div class="click-hint">Click to see the list →</div>
+    </div>
+    <div class="stat-tile" id="tile-total-transitions">
+      <div class="label">Discoveries completed (this 3S)</div>
+      <div class="value" id="kpi-total-transitions">–</div>
+      <div class="sub" id="kpi-total-transitions-sub"></div>
+      <div class="click-hint">Click to see the list →</div>
+    </div>
+    <div class="stat-tile" id="tile-total-alloc">
+      <div class="label">Discovery allocation (this 3S)</div>
+      <div class="value" id="kpi-total-alloc">–<span class="unit">days</span></div>
+      <div class="sub" id="kpi-total-alloc-sub"></div>
+      <div class="click-hint">Click to see the list →</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>TDIs moved from "In Discovery" → "Ready to Plan" per 3S</h2>
+    <div class="card-sub">Last 6 3S cycles · bars = count per cycle; line = trend · click a bar for the list</div>
+    <div id="chart-count" style="position:relative;"></div>
+  </div>
+
+  <div class="card">
+    <h2>Discovery allocation completed per 3S</h2>
+    <div class="card-sub">Last 6 3S cycles · sum of "Allocation in Days" on linked DISCOVERY epics · click a bar for the list</div>
+    <div id="chart-alloc" style="position:relative;"></div>
+  </div>
+
+  <div class="card">
+    <h2>3S breakdown</h2>
+    <div class="card-sub">Last 6 3S cycles · click a row for the list</div>
+    <table id="breakdown-table">
+      <thead>
+        <tr><th class="left">3S cycle</th><th class="left">Dates</th><th>TDIs → Ready to Plan</th><th>Discovery allocation (days)</th><th>Avg. discovery time (days)</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="note">
+      3S cycle boundaries follow the official 3S calendar; a TDI's transition is assigned to the cycle containing its actual "In Discovery → Ready to Plan" changelog timestamp. The current cycle is in progress.
+    </div>
+  </div>
+
+  <div class="card" id="drilldown">
+    <button id="drilldown-close">✕ Close</button>
+    <h2 id="drilldown-title">Details</h2>
+    <div class="card-sub" id="drilldown-sub"></div>
+    <table id="drilldown-table">
+      <thead><tr id="drilldown-head"></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="note" style="margin-top: -4px;">
+    Methodology: TDIs = Jira project <strong>TDI</strong>, issue type Feature, Zone = Communications Services, <strong>with an assignee and a target quarter (Fix Version) both set</strong> — this matches the GitHub release dashboard's count exactly (52 vs. this dashboard's earlier unfiltered 67) and is applied consistently across every metric here. Discovery allocation = sum of "Allocation in Days" on child Epics (any project) whose title contains "discovery" and whose parent is the TDI. "Refresh from Jira" requires running the local server (<code>python3 server.py</code>) in this folder — opened as a plain file, the button will tell you so instead of silently failing.
+  </div>
+
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+let RAW = __DATA_JSON__;
+
+function fmt(n) { return (n ?? 0).toLocaleString(undefined, {maximumFractionDigits: 1}); }
+function fmtDate(iso) { return new Date(iso).toLocaleDateString(undefined, {month:'short', day:'2-digit', year:'numeric'}); }
+
+// ---------- tooltip ----------
+const tooltip = document.getElementById('tooltip');
+function showTooltip(evt, html) {
+  tooltip.innerHTML = html;
+  tooltip.style.opacity = 1;
+  const rect = evt.currentTarget.closest('.wrap').getBoundingClientRect();
+  tooltip.style.left = (evt.clientX - rect.left + 12) + 'px';
+  tooltip.style.top = (evt.clientY - rect.top - 28) + 'px';
+}
+function hideTooltip() { tooltip.style.opacity = 0; }
+
+// ---------- drill-down panel ----------
+function openDrilldown(title, sub, columns, rows) {
+  document.getElementById('drilldown-title').textContent = title;
+  document.getElementById('drilldown-sub').textContent = sub;
+  document.getElementById('drilldown-head').innerHTML = columns.map((c,i) => `<th class="${i===0?'left':''}">${c}</th>`).join('');
+  const tbody = document.querySelector('#drilldown-table tbody');
+  tbody.innerHTML = rows.map(r => `<tr>${r.map((cell,i) => `<td class="${i===0?'left':''}">${cell}</td>`).join('')}</tr>`).join('');
+  document.getElementById('drilldown').classList.add('open');
+  document.getElementById('drilldown').scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+document.getElementById('drilldown-close').addEventListener('click', () => {
+  document.getElementById('drilldown').classList.remove('open');
+});
+
+function tdiLink(r) { return `<a href="${r.url}" target="_blank">${r.key}</a>`; }
+
+function drilldownFromCurrent(list, label) {
+  openDrilldown(`TDIs in "In Discovery" — ${label}`, `${list.length} issue(s)`,
+    ['Key', 'Summary', 'Product', 'Assignee', 'Quarter'],
+    list.map(r => [tdiLink(r), r.summary, r.product || '–', r.assignee || '–', (r.fix_versions||[]).join(', ') || '–']));
+}
+function drilldownFromTransitions(list, label) {
+  openDrilldown(`Discoveries completed — ${label}`, `${list.length} issue(s)`,
+    ['Key', 'Summary', 'Exit date', 'Duration (days)', 'Allocation (days)'],
+    list.map(r => [tdiLink(r), r.summary, fmtDate(r.exit_time), r.duration_days!=null?fmt(r.duration_days):'–', fmt(r.alloc_days)]));
+}
+
+// ---------- rendering ----------
+let currentInDiscovery = [], allTransitions = [], windowTransitions = [], cycleAgg = [], currentCycle = null;
+
+function recomputeAndRender() {
+  currentInDiscovery = RAW.current_in_discovery;
+  allTransitions = RAW.transitions;
+  windowTransitions = allTransitions.filter(t => t.in_window);
+
+  // cycle aggregation (drives both the top KPI tiles and the charts/table below)
+  cycleAgg = RAW.cycles.map(c => {
+    const inCycle = windowTransitions.filter(t => t.cycle_label === c.label);
+    const d = inCycle.map(t => t.duration_days).filter(x => x != null);
+    return {
+      ...c,
+      count: inCycle.length,
+      alloc_sum: inCycle.reduce((a,t)=>a+(t.alloc_days||0),0),
+      avg_duration: d.length ? d.reduce((a,b)=>a+b,0)/d.length : null,
+      _issues: inCycle,
+    };
+  });
+  currentCycle = cycleAgg.find(c => c.in_progress) || cycleAgg[cycleAgg.length - 1];
+
+  // KPIs — top 4 tiles always reflect the CURRENT (in-progress) 3S cycle
+  document.getElementById('kpi-in-discovery').textContent = currentInDiscovery.length;
+
+  const avgDur = currentCycle.avg_duration || 0;
+  document.getElementById('kpi-avg-duration').innerHTML = fmt(avgDur) + '<span class="unit">days</span>';
+  document.getElementById('kpi-avg-duration-sub').textContent = `≈ ${fmt(avgDur/7)} weeks · 3S ${currentCycle.label} (${fmtDate(currentCycle.start)} – ${fmtDate(currentCycle.end)})`;
+
+  document.getElementById('kpi-total-transitions').textContent = currentCycle.count;
+  document.getElementById('kpi-total-transitions-sub').textContent = `In Discovery → Ready to Plan · 3S ${currentCycle.label}`;
+
+  document.getElementById('kpi-total-alloc').innerHTML = fmt(currentCycle.alloc_sum) + '<span class="unit">days</span>';
+  document.getElementById('kpi-total-alloc-sub').textContent = `Sum on linked DISCOVERY epics · 3S ${currentCycle.label}`;
+
+  renderTable();
+  buildChart('chart-count', cycleAgg.map(c => c.count), {
+    step: 5, color: 'var(--series-1)', line: true, lineColor: 'var(--series-1)',
+    tooltip: c => `${c.count} TDI${c.count === 1 ? '' : 's'} → Ready to Plan`,
+    onClick: c => drilldownFromTransitions(c._issues, `3S ${c.label}`),
+  });
+  buildChart('chart-alloc', cycleAgg.map(c => c.alloc_sum), {
+    step: 25, color: 'var(--series-3)', line: false,
+    tooltip: c => `${fmt(c.alloc_sum)} allocation days`,
+    onClick: c => drilldownFromTransitions(c._issues.filter(i => i.alloc_days > 0), `Discovery allocation — 3S ${c.label}`),
+  });
+}
+
+function renderTable() {
+  const tbody = document.querySelector('#breakdown-table tbody');
+  tbody.innerHTML = '';
+  cycleAgg.forEach(c => {
+    const tr = document.createElement('tr');
+    tr.className = 'clickable-row' + (c.in_progress ? ' in-progress' : '');
+    tr.innerHTML = `<td class="left">${c.label}${c.in_progress ? ' <span class="badge-progress">in progress</span>' : ''}</td>
+      <td class="left">${fmtDate(c.start)} – ${fmtDate(c.end)}</td>
+      <td>${c.count}</td>
+      <td>${fmt(c.alloc_sum)}</td>
+      <td>${c.avg_duration != null ? fmt(c.avg_duration) : '–'}</td>`;
+    tr.addEventListener('click', () => drilldownFromTransitions(c._issues, `3S ${c.label}`));
+    tbody.appendChild(tr);
+  });
+}
+
+function buildChart(containerId, values, opts) {
+  const container = document.getElementById(containerId);
+  const W = 1120, H = 260;
+  const padL = 44, padR = 16, padT = 16, padB = 30;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+  const n = values.length;
+  const maxVal = Math.max(...values, 1);
+  const niceMax = Math.ceil(maxVal / opts.step) * opts.step || opts.step;
+  const barSlot = plotW / n;
+  const barW = Math.min(24, barSlot * 0.55);
+  const x = i => padL + barSlot * i + barSlot / 2;
+  const y = v => padT + plotH - (v / niceMax) * plotH;
+
+  let svg = `<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}">`;
+  const steps = 4;
+  for (let s = 0; s <= steps; s++) {
+    const v = (niceMax / steps) * s;
+    const gy = y(v);
+    svg += `<line class="gridline" x1="${padL}" y1="${gy}" x2="${W - padR}" y2="${gy}" />`;
+    svg += `<text class="axis-label" x="${padL - 8}" y="${gy + 3}" text-anchor="end">${Math.round(v)}</text>`;
+  }
+  svg += `<line class="baseline" x1="${padL}" y1="${y(0)}" x2="${W - padR}" y2="${y(0)}" />`;
+
+  cycleAgg.forEach((c, i) => {
+    const v = values[i];
+    const bx = x(i) - barW / 2;
+    const by = y(v);
+    const bh = y(0) - by;
+    const fill = c.in_progress ? 'var(--in-progress)' : opts.color;
+    svg += `<rect class="bar-mark" data-i="${i}" x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${barW}" height="${Math.max(bh,0).toFixed(1)}" rx="4" ry="4" fill="${fill}" style="cursor:pointer" />`;
+  });
+
+  if (opts.line) {
+    let pathD = '';
+    values.forEach((v, i) => { pathD += `${i === 0 ? 'M' : 'L'}${x(i).toFixed(1)},${y(v).toFixed(1)} `; });
+    svg += `<path d="${pathD}" fill="none" stroke="${opts.lineColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />`;
+    values.forEach((v, i) => { svg += `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="4" fill="${opts.lineColor}" stroke="var(--surface-1)" stroke-width="2" />`; });
+  }
+
+  cycleAgg.forEach((c, i) => {
+    svg += `<text class="axis-label" x="${x(i).toFixed(1)}" y="${H - padB + 16}" text-anchor="middle">${c.label}</text>`;
+  });
+  svg += `</svg>`;
+  container.innerHTML = svg;
+
+  container.querySelectorAll('.bar-mark').forEach(el => {
+    const i = +el.dataset.i;
+    const c = cycleAgg[i];
+    el.addEventListener('mousemove', (evt) => {
+      showTooltip(evt, `<strong>3S ${c.label}</strong>${c.in_progress ? ' (in progress)' : ''}<br>${fmtDate(c.start)} – ${fmtDate(c.end)}<br>${opts.tooltip(c)}`);
+    });
+    el.addEventListener('mouseleave', hideTooltip);
+    el.addEventListener('click', () => opts.onClick(c));
+  });
+}
+
+// ---------- KPI tile click -> drill-down ----------
+document.getElementById('tile-in-discovery').addEventListener('click', () => drilldownFromCurrent(currentInDiscovery, 'all'));
+document.getElementById('tile-avg-duration').addEventListener('click', () => drilldownFromTransitions(currentCycle._issues, `3S ${currentCycle.label} (current)`));
+document.getElementById('tile-total-transitions').addEventListener('click', () => drilldownFromTransitions(currentCycle._issues, `3S ${currentCycle.label} (current)`));
+document.getElementById('tile-total-alloc').addEventListener('click', () => drilldownFromTransitions(currentCycle._issues.filter(t => t.alloc_days > 0), `3S ${currentCycle.label} (current), allocation > 0`));
+
+// ---------- refresh from Jira ----------
+document.getElementById('refresh-btn').addEventListener('click', async () => {
+  const btn = document.getElementById('refresh-btn');
+  const status = document.getElementById('refresh-status');
+  btn.disabled = true;
+  status.textContent = 'Refreshing from Jira... this can take a few minutes.';
+  try {
+    const resp = await fetch('/api/data');
+    if (!resp.ok) throw new Error('Server responded with ' + resp.status);
+    RAW = await resp.json();
+    setGeneratedAt();
+    recomputeAndRender();
+    status.textContent = 'Refreshed just now.';
+  } catch (e) {
+    status.textContent = 'Could not reach local server. Run "python3 server.py" in this folder, then retry.';
+  } finally {
+    btn.disabled = false;
+  }
+});
+
+function setGeneratedAt() {
+  document.getElementById('generated-at').textContent =
+    'Data as of ' + new Date(RAW.generated_at).toLocaleString(undefined, {dateStyle:'medium', timeStyle:'short'});
+}
+
+// ---------- init ----------
+setGeneratedAt();
+recomputeAndRender();
+</script>
+</body>
+</html>
