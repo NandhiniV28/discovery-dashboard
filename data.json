@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T09:25:57.638017+00:00",
+  "generated_at": "2026-09-25T10:28:36.141607+00:00",
   "zone": "Communications Services",
   "window_cycles": 6,
   "current_in_discovery": [
@@ -681,7 +681,8 @@
           "key": "IC-12474",
           "summary": "Discovery: Provisional event streaming for enhanced scalability",
           "status": "Done",
-          "alloc_days": 1.0
+          "alloc_days": 1.0,
+          "url": "https://talkdesk.atlassian.net/browse/IC-12474"
         }
       ],
       "in_window": true,
@@ -878,7 +879,8 @@
           "key": "NBR-11833",
           "summary": "(Discovery) Numbers Management \u2014 Minimum Withhold Period Enforcement",
           "status": "Done",
-          "alloc_days": 20.0
+          "alloc_days": 20.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11833"
         }
       ],
       "in_window": true,
@@ -1011,7 +1013,8 @@
           "key": "VPLAT-1942",
           "summary": "Discovery - SIP Trunk Visibility based on Entitlements",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-1942"
         }
       ],
       "in_window": true,
@@ -1081,7 +1084,8 @@
           "key": "UNDIR-8262",
           "summary": "(DISCOVERY) : Device Brand/Model display in Dashboard, Device Brand/model Search & Filter",
           "status": "In Progress",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/UNDIR-8262"
         }
       ],
       "in_window": true,
@@ -1109,7 +1113,8 @@
           "key": "VCS-5747",
           "summary": "Time of Day Routing (Discovery)",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VCS-5747"
         }
       ],
       "in_window": true,
@@ -1200,7 +1205,8 @@
           "key": "VPLAT-1491",
           "summary": "Discovery for Ringing strategies",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-1491"
         }
       ],
       "in_window": true,
@@ -1291,7 +1297,8 @@
           "key": "VCS-5185",
           "summary": "Pre-queue waiting experience - Discovery",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VCS-5185"
         }
       ],
       "in_window": true,
@@ -1319,7 +1326,8 @@
           "key": "VS-2676",
           "summary": "Transfer calls between studio flows without agent intervention - Discovery",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2676"
         }
       ],
       "in_window": true,
@@ -1347,7 +1355,8 @@
           "key": "VS-2683",
           "summary": "Studio Precall Recording - Discovery",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2683"
         }
       ],
       "in_window": true,
@@ -1375,7 +1384,8 @@
           "key": "VS-2657",
           "summary": "Callback expose new exits - Discovery",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2657"
         }
       ],
       "in_window": true,
@@ -1403,7 +1413,8 @@
           "key": "UNDIR-6945",
           "summary": "Discovery and PoC for Call Quality metrics",
           "status": "Done",
-          "alloc_days": 15.0
+          "alloc_days": 15.0,
+          "url": "https://talkdesk.atlassian.net/browse/UNDIR-6945"
         }
       ],
       "in_window": true,
@@ -1431,7 +1442,8 @@
           "key": "VS-2613",
           "summary": "API Flow - Report unanswered Calls (Discovery)",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2613"
         }
       ],
       "in_window": true,
@@ -1480,7 +1492,8 @@
           "key": "VOICE-14684",
           "summary": "Interaction quality API decomission - discovery",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-14684"
         }
       ],
       "in_window": true,
@@ -1508,7 +1521,8 @@
           "key": "VS-2607",
           "summary": "Adopt the studio dynamic data on the voice components - Discovery",
           "status": "Done",
-          "alloc_days": 7.5
+          "alloc_days": 7.5,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2607"
         }
       ],
       "in_window": true,
@@ -1536,7 +1550,8 @@
           "key": "UNDIR-6529",
           "summary": "Discovery - Fraud prevention",
           "status": "Done",
-          "alloc_days": 7.5
+          "alloc_days": 7.5,
+          "url": "https://talkdesk.atlassian.net/browse/UNDIR-6529"
         }
       ],
       "in_window": true,
@@ -1585,7 +1600,8 @@
           "key": "NBR-9421",
           "summary": "(Discovery) 911 emergency service troubleshooting and diagnostics tooling",
           "status": "Done",
-          "alloc_days": 2.5
+          "alloc_days": 2.5,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-9421"
         }
       ],
       "in_window": true,
@@ -1697,6 +1713,27 @@
       "cycle_label": null
     },
     {
+      "id": "TDI-15985|2026-08-12T09:20:12.215000-06:00",
+      "key": "TDI-15985",
+      "summary": "Extension Number Visibility for Agents",
+      "status": "In Delivery",
+      "fix_versions": [
+        "FY27Q3"
+      ],
+      "assignee": "Teresa Costa",
+      "product": "Office",
+      "tdi_category": "NPI 3 Incremental Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-15985",
+      "exit_time": "2026-08-12T09:20:12.215000-06:00",
+      "entry_time": "2026-06-01T09:33:01.800000-06:00",
+      "duration_days": 71.9910927662037,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
+      "in_window": true,
+      "cycle_label": "260911"
+    },
+    {
       "id": "TDI-16147|2026-09-01T23:09:46.198000-06:00",
       "key": "TDI-16147",
       "summary": "Trusted Calling Number Lifecycle and Agent desktop notification",
@@ -1718,13 +1755,15 @@
           "key": "VS-2728",
           "summary": "[Discovery] Trusted Calling Number Lifecycle and Agent desktop notification ",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2728"
         },
         {
           "key": "VCI-5859",
           "summary": "[Discovery] Trusted Calling Number Lifecycle and Agent desktop notification",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VCI-5859"
         }
       ],
       "in_window": true,
@@ -1752,7 +1791,8 @@
           "key": "NBR-11772",
           "summary": "(Discovery) WhatsApp Calling Foundation - Number configuration and capability visibility",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11772"
         }
       ],
       "in_window": true,
@@ -1780,25 +1820,25 @@
       "cycle_label": "261023"
     },
     {
-      "id": "TDI-15985|2026-08-12T09:20:12.215000-06:00",
-      "key": "TDI-15985",
-      "summary": "Extension Number Visibility for Agents",
-      "status": "In Delivery",
+      "id": "TDI-15939|2026-06-09T09:15:16.742000-06:00",
+      "key": "TDI-15939",
+      "summary": "Transfers using Assignment system: Transfer Priority Setting",
+      "status": "GA",
       "fix_versions": [
-        "FY27Q3"
+        "FY27Q2"
       ],
-      "assignee": "Teresa Costa",
-      "product": "Office",
+      "assignee": "Mattia Pedrani",
+      "product": "Voice Platform",
       "tdi_category": "NPI 3 Incremental Customer Value",
       "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-15985",
-      "exit_time": "2026-08-12T09:20:12.215000-06:00",
-      "entry_time": "2026-06-01T09:33:01.800000-06:00",
-      "duration_days": 71.9910927662037,
+      "url": "https://talkdesk.atlassian.net/browse/TDI-15939",
+      "exit_time": "2026-06-09T09:15:16.742000-06:00",
+      "entry_time": "2026-05-25T09:56:29.123000-06:00",
+      "duration_days": 14.971384479166666,
       "alloc_days": 0.0,
       "discovery_epics": [],
       "in_window": true,
-      "cycle_label": "260911"
+      "cycle_label": "260619"
     },
     {
       "id": "TDI-15811|2026-06-09T04:11:42.933000-06:00",
@@ -1816,6 +1856,56 @@
       "exit_time": "2026-06-09T04:11:42.933000-06:00",
       "entry_time": "2026-05-19T07:44:14.738000-06:00",
       "duration_days": 20.852409664351853,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
+      "in_window": true,
+      "cycle_label": "260619"
+    },
+    {
+      "id": "TDI-15667|2026-07-09T10:42:21.536000-06:00",
+      "key": "TDI-15667",
+      "summary": "Remove Twilio's hard dependency on VCIS",
+      "status": "Internal",
+      "fix_versions": [
+        "FY27Q3"
+      ],
+      "assignee": "Paulo Figueiredo",
+      "product": "Voice Platform",
+      "tdi_category": "Technology",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-15667",
+      "exit_time": "2026-07-09T10:42:21.536000-06:00",
+      "entry_time": "2026-05-22T04:51:45.910000-06:00",
+      "duration_days": 48.24346789351852,
+      "alloc_days": 5.0,
+      "discovery_epics": [
+        {
+          "key": "VCI-5112",
+          "summary": "Remove Twilio's hard dependency on VCIS (Discovery)",
+          "status": "Done",
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VCI-5112"
+        }
+      ],
+      "in_window": true,
+      "cycle_label": "260731"
+    },
+    {
+      "id": "TDI-15709|2026-06-03T17:37:38.880000-06:00",
+      "key": "TDI-15709",
+      "summary": "UC Calls Reporting",
+      "status": "Preview",
+      "fix_versions": [
+        "FY27Q3"
+      ],
+      "assignee": "Pedro Santos",
+      "product": "Office",
+      "tdi_category": "NPI 3 Incremental Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-15709",
+      "exit_time": "2026-06-03T17:37:38.880000-06:00",
+      "entry_time": "2026-05-14T04:03:46.403000-06:00",
+      "duration_days": 20.56519070601852,
       "alloc_days": 0.0,
       "discovery_epics": [],
       "in_window": true,
@@ -1844,7 +1934,8 @@
           "key": "IC-12008",
           "summary": "[Discovery]- UC PSTN Billing \u2014 CDR emission from peering Kamailio",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/IC-12008"
         }
       ],
       "in_window": true,
@@ -1871,123 +1962,6 @@
       "discovery_epics": [],
       "in_window": true,
       "cycle_label": "260619"
-    },
-    {
-      "id": "TDI-15667|2026-07-09T10:42:21.536000-06:00",
-      "key": "TDI-15667",
-      "summary": "Remove Twilio's hard dependency on VCIS",
-      "status": "Internal",
-      "fix_versions": [
-        "FY27Q3"
-      ],
-      "assignee": "Paulo Figueiredo",
-      "product": "Voice Platform",
-      "tdi_category": "Technology",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-15667",
-      "exit_time": "2026-07-09T10:42:21.536000-06:00",
-      "entry_time": "2026-05-22T04:51:45.910000-06:00",
-      "duration_days": 48.24346789351852,
-      "alloc_days": 5.0,
-      "discovery_epics": [
-        {
-          "key": "VCI-5112",
-          "summary": "Remove Twilio's hard dependency on VCIS (Discovery)",
-          "status": "Done",
-          "alloc_days": 5.0
-        }
-      ],
-      "in_window": true,
-      "cycle_label": "260731"
-    },
-    {
-      "id": "TDI-15939|2026-06-09T09:15:16.742000-06:00",
-      "key": "TDI-15939",
-      "summary": "Transfers using Assignment system: Transfer Priority Setting",
-      "status": "GA",
-      "fix_versions": [
-        "FY27Q2"
-      ],
-      "assignee": "Mattia Pedrani",
-      "product": "Voice Platform",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-15939",
-      "exit_time": "2026-06-09T09:15:16.742000-06:00",
-      "entry_time": "2026-05-25T09:56:29.123000-06:00",
-      "duration_days": 14.971384479166666,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
-      "in_window": true,
-      "cycle_label": "260619"
-    },
-    {
-      "id": "TDI-15646|2026-06-08T04:09:45.309000-06:00",
-      "key": "TDI-15646",
-      "summary": "Keyboard shortcuts for Conversations Voice",
-      "status": "GA",
-      "fix_versions": [
-        "FY27Q3"
-      ],
-      "assignee": "Teresa Costa",
-      "product": "Conversations Voice Channel",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-15646",
-      "exit_time": "2026-06-08T04:09:45.309000-06:00",
-      "entry_time": "2026-04-27T02:00:02.252000-06:00",
-      "duration_days": 42.09008167824074,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
-      "in_window": true,
-      "cycle_label": "260619"
-    },
-    {
-      "id": "TDI-15950|2026-09-09T07:42:22.884000-06:00",
-      "key": "TDI-15950",
-      "summary": "Emergency Calling (E911) for Non-US/Canada accounts",
-      "status": "In Delivery",
-      "fix_versions": [
-        "FY27Q3",
-        "FY27Q4"
-      ],
-      "assignee": "Hugo Roda",
-      "product": "Emergency Services",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-GCN",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-15950",
-      "exit_time": "2026-09-09T07:42:22.884000-06:00",
-      "entry_time": "2026-07-28T05:04:46.569000-06:00",
-      "duration_days": 43.10944809027778,
-      "alloc_days": 12.5,
-      "discovery_epics": [
-        {
-          "key": "VPLAT-2063",
-          "summary": "Discovery - Voice Evolution changes to support Emergency Calling for Non-US/Canada",
-          "status": "Done",
-          "alloc_days": 2.5
-        },
-        {
-          "key": "NBR-12836",
-          "summary": "(DISCOVERY) e911-api changes to replace e-sip-router",
-          "status": "In Progress",
-          "alloc_days": 2.5
-        },
-        {
-          "key": "NBR-12241",
-          "summary": "(Discovery) Emergency Settings feature changes to non-US/Canada regions",
-          "status": "Done",
-          "alloc_days": 2.5
-        },
-        {
-          "key": "NBR-11150",
-          "summary": "(Discovery) Deploy Emergency Calling (E911)  for Non-US/Canada accounts",
-          "status": "Done",
-          "alloc_days": 5.0
-        }
-      ],
-      "in_window": true,
-      "cycle_label": "260911"
     },
     {
       "id": "TDI-15660|2026-05-08T04:31:25.367000-06:00",
@@ -2032,27 +2006,6 @@
       "cycle_label": "260619"
     },
     {
-      "id": "TDI-15709|2026-06-03T17:37:38.880000-06:00",
-      "key": "TDI-15709",
-      "summary": "UC Calls Reporting",
-      "status": "Preview",
-      "fix_versions": [
-        "FY27Q3"
-      ],
-      "assignee": "Pedro Santos",
-      "product": "Office",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-15709",
-      "exit_time": "2026-06-03T17:37:38.880000-06:00",
-      "entry_time": "2026-05-14T04:03:46.403000-06:00",
-      "duration_days": 20.56519070601852,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
-      "in_window": true,
-      "cycle_label": "260619"
-    },
-    {
       "id": "TDI-15561|2026-06-09T08:28:32.210000-06:00",
       "key": "TDI-15561",
       "summary": "SIP Trunking for MS Teams - Tenant creation, self service & Call Context",
@@ -2074,7 +2027,8 @@
           "key": "VPLAT-1468",
           "summary": "SIP Trunking for MS Teams Discovery",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-1468"
         }
       ],
       "in_window": true,
@@ -2102,7 +2056,8 @@
           "key": "VPLAT-1468",
           "summary": "SIP Trunking for MS Teams Discovery",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-1468"
         }
       ],
       "in_window": true,
@@ -2130,7 +2085,8 @@
           "key": "VOICE-14883",
           "summary": "[Discovery] - Retire agent_occupancy_changed's Local Interaction Cache",
           "status": "Done",
-          "alloc_days": 4.0
+          "alloc_days": 4.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-14883"
         }
       ],
       "in_window": true,
@@ -2158,32 +2114,63 @@
           "key": "VOICE-14883",
           "summary": "[Discovery] - Retire agent_occupancy_changed's Local Interaction Cache",
           "status": "Done",
-          "alloc_days": 4.0
+          "alloc_days": 4.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-14883"
         }
       ],
       "in_window": true,
       "cycle_label": "260911"
     },
     {
-      "id": "TDI-15411|2026-06-03T10:37:17.042000-06:00",
-      "key": "TDI-15411",
-      "summary": "Automated mechanism to change outbound voice traffic of Twilio Numbers ",
-      "status": "GA",
+      "id": "TDI-15950|2026-09-09T07:42:22.884000-06:00",
+      "key": "TDI-15950",
+      "summary": "Emergency Calling (E911) for Non-US/Canada accounts",
+      "status": "In Delivery",
       "fix_versions": [
-        "FY27Q3"
+        "FY27Q3",
+        "FY27Q4"
       ],
-      "assignee": "Shashank Prasad",
-      "product": "Numbers",
-      "tdi_category": "NPI 4 Simple UI/Fix",
+      "assignee": "Hugo Roda",
+      "product": "Emergency Services",
+      "tdi_category": "NPI 3 Incremental Customer Value",
       "rd_product_area": "Comms-GCN",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-15411",
-      "exit_time": "2026-06-03T10:37:17.042000-06:00",
-      "entry_time": "2026-04-02T10:34:40.765000-06:00",
-      "duration_days": 62.00180876157407,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
+      "url": "https://talkdesk.atlassian.net/browse/TDI-15950",
+      "exit_time": "2026-09-09T07:42:22.884000-06:00",
+      "entry_time": "2026-07-28T05:04:46.569000-06:00",
+      "duration_days": 43.10944809027778,
+      "alloc_days": 12.5,
+      "discovery_epics": [
+        {
+          "key": "VPLAT-2063",
+          "summary": "Discovery - Voice Evolution changes to support Emergency Calling for Non-US/Canada",
+          "status": "Done",
+          "alloc_days": 2.5,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-2063"
+        },
+        {
+          "key": "NBR-12836",
+          "summary": "(DISCOVERY) e911-api changes to replace e-sip-router",
+          "status": "In Progress",
+          "alloc_days": 2.5,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-12836"
+        },
+        {
+          "key": "NBR-12241",
+          "summary": "(Discovery) Emergency Settings feature changes to non-US/Canada regions",
+          "status": "Done",
+          "alloc_days": 2.5,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-12241"
+        },
+        {
+          "key": "NBR-11150",
+          "summary": "(Discovery) Deploy Emergency Calling (E911)  for Non-US/Canada accounts",
+          "status": "Done",
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11150"
+        }
+      ],
       "in_window": true,
-      "cycle_label": "260619"
+      "cycle_label": "260911"
     },
     {
       "id": "TDI-15445|2026-07-19T22:59:01.766000-06:00",
@@ -2207,7 +2194,8 @@
           "key": "VS-2675",
           "summary": "Callback early media - Discovery",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2675"
         }
       ],
       "in_window": true,
@@ -2235,7 +2223,8 @@
           "key": "VS-2615",
           "summary": "[VA]Control Post Call Actions on Transfers - Discovery",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2615"
         }
       ],
       "in_window": true,
@@ -2263,7 +2252,8 @@
           "key": "VS-2615",
           "summary": "[VA]Control Post Call Actions on Transfers - Discovery",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2615"
         }
       ],
       "in_window": true,
@@ -2291,11 +2281,75 @@
           "key": "VS-2674",
           "summary": "Callback re-ring agent - Discovery",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2674"
         }
       ],
       "in_window": true,
       "cycle_label": "260731"
+    },
+    {
+      "id": "TDI-15411|2026-06-03T10:37:17.042000-06:00",
+      "key": "TDI-15411",
+      "summary": "Automated mechanism to change outbound voice traffic of Twilio Numbers ",
+      "status": "GA",
+      "fix_versions": [
+        "FY27Q3"
+      ],
+      "assignee": "Shashank Prasad",
+      "product": "Numbers",
+      "tdi_category": "NPI 4 Simple UI/Fix",
+      "rd_product_area": "Comms-GCN",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-15411",
+      "exit_time": "2026-06-03T10:37:17.042000-06:00",
+      "entry_time": "2026-04-02T10:34:40.765000-06:00",
+      "duration_days": 62.00180876157407,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
+      "in_window": true,
+      "cycle_label": "260619"
+    },
+    {
+      "id": "TDI-15646|2026-06-08T04:09:45.309000-06:00",
+      "key": "TDI-15646",
+      "summary": "Keyboard shortcuts for Conversations Voice",
+      "status": "GA",
+      "fix_versions": [
+        "FY27Q3"
+      ],
+      "assignee": "Teresa Costa",
+      "product": "Conversations Voice Channel",
+      "tdi_category": "NPI 3 Incremental Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-15646",
+      "exit_time": "2026-06-08T04:09:45.309000-06:00",
+      "entry_time": "2026-04-27T02:00:02.252000-06:00",
+      "duration_days": 42.09008167824074,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
+      "in_window": true,
+      "cycle_label": "260619"
+    },
+    {
+      "id": "TDI-15087|2026-04-28T04:43:38.307000-06:00",
+      "key": "TDI-15087",
+      "summary": "Default Country Code Handling - user level",
+      "status": "GA",
+      "fix_versions": [
+        "FY27Q2"
+      ],
+      "assignee": "Pedro Cabrita",
+      "product": "Conversations Voice Channel",
+      "tdi_category": "NPI 3 Incremental Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-15087",
+      "exit_time": "2026-04-28T04:43:38.307000-06:00",
+      "entry_time": "2026-03-17T05:39:35.646000-06:00",
+      "duration_days": 41.96114190972222,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
+      "in_window": true,
+      "cycle_label": "260508"
     },
     {
       "id": "TDI-15400|2026-06-25T07:37:59.540000-06:00",
@@ -2340,30 +2394,10 @@
           "key": "NBR-10439",
           "summary": "(Discovery) Multi-provider Emergency Calls pages",
           "status": "Done",
-          "alloc_days": 2.5
+          "alloc_days": 2.5,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-10439"
         }
       ],
-      "in_window": true,
-      "cycle_label": "260508"
-    },
-    {
-      "id": "TDI-15087|2026-04-28T04:43:38.307000-06:00",
-      "key": "TDI-15087",
-      "summary": "Default Country Code Handling - user level",
-      "status": "GA",
-      "fix_versions": [
-        "FY27Q2"
-      ],
-      "assignee": "Pedro Cabrita",
-      "product": "Conversations Voice Channel",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-15087",
-      "exit_time": "2026-04-28T04:43:38.307000-06:00",
-      "entry_time": "2026-03-17T05:39:35.646000-06:00",
-      "duration_days": 41.96114190972222,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
       "in_window": true,
       "cycle_label": "260508"
     },
@@ -2389,32 +2423,12 @@
           "key": "NBR-10097",
           "summary": "(Discovery) Fix code coverage metrics on SonarQube report",
           "status": "Done",
-          "alloc_days": 2.5
+          "alloc_days": 2.5,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-10097"
         }
       ],
       "in_window": true,
       "cycle_label": "260327"
-    },
-    {
-      "id": "TDI-14483|2026-04-23T03:58:06.298000-06:00",
-      "key": "TDI-14483",
-      "summary": "Adopt team-based access control in Numbers : Filter phone numbers by team on Numbers page",
-      "status": "Ready to Plan",
-      "fix_versions": [
-        "FY28Q1"
-      ],
-      "assignee": "Hugo Roda",
-      "product": "Numbers",
-      "tdi_category": "NPI 4 Simple UI/Fix",
-      "rd_product_area": "Comms-GCN",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-14483",
-      "exit_time": "2026-04-23T03:58:06.298000-06:00",
-      "entry_time": "2026-02-03T08:28:14.059000-07:00",
-      "duration_days": 78.77074350694444,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
-      "in_window": true,
-      "cycle_label": "260508"
     },
     {
       "id": "TDI-14482|2026-04-09T04:21:56.787000-06:00",
@@ -2432,6 +2446,27 @@
       "exit_time": "2026-04-09T04:21:56.787000-06:00",
       "entry_time": "2026-02-03T08:28:16.891000-07:00",
       "duration_days": 64.78726731481481,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
+      "in_window": true,
+      "cycle_label": "260508"
+    },
+    {
+      "id": "TDI-14483|2026-04-23T03:58:06.298000-06:00",
+      "key": "TDI-14483",
+      "summary": "Adopt team-based access control in Numbers : Filter phone numbers by team on Numbers page",
+      "status": "Ready to Plan",
+      "fix_versions": [
+        "FY28Q1"
+      ],
+      "assignee": "Hugo Roda",
+      "product": "Numbers",
+      "tdi_category": "NPI 4 Simple UI/Fix",
+      "rd_product_area": "Comms-GCN",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-14483",
+      "exit_time": "2026-04-23T03:58:06.298000-06:00",
+      "entry_time": "2026-02-03T08:28:14.059000-07:00",
+      "duration_days": 78.77074350694444,
       "alloc_days": 0.0,
       "discovery_epics": [],
       "in_window": true,
@@ -2459,25 +2494,29 @@
           "key": "VPLAT-1586",
           "summary": "Discovery for SIP Trunking Phase-2",
           "status": "In Progress",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-1586"
         },
         {
           "key": "IC-12293",
           "summary": "Call Routing Failover - Discovery",
           "status": "Done",
-          "alloc_days": 2.0
+          "alloc_days": 2.0,
+          "url": "https://talkdesk.atlassian.net/browse/IC-12293"
         },
         {
           "key": "IC-12292",
           "summary": "Signaling & Interoperability (SIP REFER) : Discovery",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/IC-12292"
         },
         {
           "key": "IC-11964",
           "summary": "Discovery of Real-Time Monitoring & Analytics (Customer Facing)",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/IC-11964"
         }
       ],
       "in_window": true,
@@ -2505,25 +2544,29 @@
           "key": "VPLAT-1586",
           "summary": "Discovery for SIP Trunking Phase-2",
           "status": "In Progress",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-1586"
         },
         {
           "key": "IC-12293",
           "summary": "Call Routing Failover - Discovery",
           "status": "Done",
-          "alloc_days": 2.0
+          "alloc_days": 2.0,
+          "url": "https://talkdesk.atlassian.net/browse/IC-12293"
         },
         {
           "key": "IC-12292",
           "summary": "Signaling & Interoperability (SIP REFER) : Discovery",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/IC-12292"
         },
         {
           "key": "IC-11964",
           "summary": "Discovery of Real-Time Monitoring & Analytics (Customer Facing)",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/IC-11964"
         }
       ],
       "in_window": true,
@@ -2551,6 +2594,35 @@
       "cycle_label": "260327"
     },
     {
+      "id": "TDI-14050|2026-02-12T05:21:17.109000-07:00",
+      "key": "TDI-14050",
+      "summary": "[PF] Cleanup after Numbers NG full rollout (Corporate)",
+      "status": "GA",
+      "fix_versions": [
+        "FY27Q1"
+      ],
+      "assignee": "Hugo Roda",
+      "product": "Numbers",
+      "tdi_category": "Technology",
+      "rd_product_area": "Comms-GCN",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-14050",
+      "exit_time": "2026-02-12T05:21:17.109000-07:00",
+      "entry_time": "2025-12-18T07:31:51.301000-07:00",
+      "duration_days": 55.909326481481486,
+      "alloc_days": 2.5,
+      "discovery_epics": [
+        {
+          "key": "NBR-9878",
+          "summary": "(Discovery) Cleanup after Numbers NG full rollout (Corporate)",
+          "status": "Done",
+          "alloc_days": 2.5,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-9878"
+        }
+      ],
+      "in_window": false,
+      "cycle_label": null
+    },
+    {
       "id": "TDI-14026|2026-08-24T00:39:45.039000-06:00",
       "key": "TDI-14026",
       "summary": "Explore Reporting VEV",
@@ -2572,7 +2644,8 @@
           "key": "VPLAT-1386",
           "summary": "Discovery - Explore reports for VEV",
           "status": "In Progress",
-          "alloc_days": 7.5
+          "alloc_days": 7.5,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-1386"
         }
       ],
       "in_window": true,
@@ -2598,34 +2671,6 @@
       "discovery_epics": [],
       "in_window": true,
       "cycle_label": "260731"
-    },
-    {
-      "id": "TDI-14050|2026-02-12T05:21:17.109000-07:00",
-      "key": "TDI-14050",
-      "summary": "[PF] Cleanup after Numbers NG full rollout (Corporate)",
-      "status": "GA",
-      "fix_versions": [
-        "FY27Q1"
-      ],
-      "assignee": "Hugo Roda",
-      "product": "Numbers",
-      "tdi_category": "Technology",
-      "rd_product_area": "Comms-GCN",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-14050",
-      "exit_time": "2026-02-12T05:21:17.109000-07:00",
-      "entry_time": "2025-12-18T07:31:51.301000-07:00",
-      "duration_days": 55.909326481481486,
-      "alloc_days": 2.5,
-      "discovery_epics": [
-        {
-          "key": "NBR-9878",
-          "summary": "(Discovery) Cleanup after Numbers NG full rollout (Corporate)",
-          "status": "Done",
-          "alloc_days": 2.5
-        }
-      ],
-      "in_window": false,
-      "cycle_label": null
     },
     {
       "id": "TDI-13631|2026-02-07T04:54:54.536000-07:00",
@@ -2733,7 +2778,8 @@
           "key": "NBR-9377",
           "summary": "(Discovery) SRE - Adopt App Manifest against our \"legacy\" Environments and Talkdesk Regions",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-9377"
         }
       ],
       "in_window": true,
@@ -2761,30 +2807,10 @@
           "key": "VPLAT-773",
           "summary": "Conversations App Companion Mode - Discovery",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-773"
         }
       ],
-      "in_window": false,
-      "cycle_label": null
-    },
-    {
-      "id": "TDI-13252|2025-11-24T06:12:31.741000-07:00",
-      "key": "TDI-13252",
-      "summary": "Dialpad free dialing - Call restrictions on Conversations App",
-      "status": "GA",
-      "fix_versions": [
-        "FY27Q2"
-      ],
-      "assignee": "Ana Borges",
-      "product": "Conversations Voice Channel",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-13252",
-      "exit_time": "2025-11-24T06:12:31.741000-07:00",
-      "entry_time": "2025-09-26T04:57:54.765000-06:00",
-      "duration_days": 59.09348351851852,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
       "in_window": false,
       "cycle_label": null
     },
@@ -2810,21 +2836,21 @@
       "cycle_label": "260327"
     },
     {
-      "id": "TDI-13242|2025-11-24T06:12:42.529000-07:00",
-      "key": "TDI-13242",
-      "summary": "Leverage Voice 2.0 API for call restrictions & number manipulations",
+      "id": "TDI-13252|2025-11-24T06:12:31.741000-07:00",
+      "key": "TDI-13252",
+      "summary": "Dialpad free dialing - Call restrictions on Conversations App",
       "status": "GA",
       "fix_versions": [
         "FY27Q2"
       ],
-      "assignee": "Sri Harsha Sathyanarayana Honsogae",
-      "product": "Voice Platform",
-      "tdi_category": "NPI 2 Major Customer Value",
+      "assignee": "Ana Borges",
+      "product": "Conversations Voice Channel",
+      "tdi_category": "NPI 3 Incremental Customer Value",
       "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-13242",
-      "exit_time": "2025-11-24T06:12:42.529000-07:00",
-      "entry_time": "2025-09-26T02:13:22.221000-06:00",
-      "duration_days": 59.20787393518519,
+      "url": "https://talkdesk.atlassian.net/browse/TDI-13252",
+      "exit_time": "2025-11-24T06:12:31.741000-07:00",
+      "entry_time": "2025-09-26T04:57:54.765000-06:00",
+      "duration_days": 59.09348351851852,
       "alloc_days": 0.0,
       "discovery_epics": [],
       "in_window": false,
@@ -2852,7 +2878,8 @@
           "key": "NBR-9324",
           "summary": "(Discovery) Twilio Failover: Plan and execute firedrills",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-9324"
         }
       ],
       "in_window": false,
@@ -2880,7 +2907,8 @@
           "key": "VPLAT-604",
           "summary": "E911 Compliant Address - Sites - Discovery",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-604"
         }
       ],
       "in_window": false,
@@ -2908,9 +2936,31 @@
           "key": "VPLAT-604",
           "summary": "E911 Compliant Address - Sites - Discovery",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-604"
         }
       ],
+      "in_window": false,
+      "cycle_label": null
+    },
+    {
+      "id": "TDI-13242|2025-11-24T06:12:42.529000-07:00",
+      "key": "TDI-13242",
+      "summary": "Leverage Voice 2.0 API for call restrictions & number manipulations",
+      "status": "GA",
+      "fix_versions": [
+        "FY27Q2"
+      ],
+      "assignee": "Sri Harsha Sathyanarayana Honsogae",
+      "product": "Voice Platform",
+      "tdi_category": "NPI 2 Major Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-13242",
+      "exit_time": "2025-11-24T06:12:42.529000-07:00",
+      "entry_time": "2025-09-26T02:13:22.221000-06:00",
+      "duration_days": 59.20787393518519,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
       "in_window": false,
       "cycle_label": null
     },
@@ -2936,72 +2986,19 @@
           "key": "VPLAT-1625",
           "summary": "Discovery for Call Waiting",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-1625"
         },
         {
           "key": "VOICE-15551",
           "summary": "Discovery on Call Waiting on Conversation App",
           "status": "Done",
-          "alloc_days": 10.0
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-15551"
         }
       ],
       "in_window": true,
       "cycle_label": "260911"
-    },
-    {
-      "id": "TDI-12889|2026-02-24T03:56:59.603000-07:00",
-      "key": "TDI-12889",
-      "summary": "[VA]Studio Callbacks Visibility - Display active studio callbacks on Callback Manager App",
-      "status": "GA",
-      "fix_versions": [
-        "FY27Q2"
-      ],
-      "assignee": "Kumaresh O D",
-      "product": "Studio IVR",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-12889",
-      "exit_time": "2026-02-24T03:56:59.603000-07:00",
-      "entry_time": "2025-10-14T03:49:49.789000-06:00",
-      "duration_days": 133.04664136574073,
-      "alloc_days": 10.0,
-      "discovery_epics": [
-        {
-          "key": "VS-2410",
-          "summary": "[VA] Discovery - Studio Callbacks Visibility in Call Manager app",
-          "status": "Done",
-          "alloc_days": 10.0
-        },
-        {
-          "key": "DES-3386",
-          "summary": "[Discovery] Studio Callback visibility in Callback manager",
-          "status": "Done",
-          "alloc_days": 0.0
-        }
-      ],
-      "in_window": true,
-      "cycle_label": "260327"
-    },
-    {
-      "id": "TDI-12832|2025-09-23T07:14:52.166000-06:00",
-      "key": "TDI-12832",
-      "summary": "[PF] Adopt STIG compliance scans (non-FedRAMP)",
-      "status": "Cancelled",
-      "fix_versions": [
-        "FY27Q1"
-      ],
-      "assignee": "Hugo Roda",
-      "product": null,
-      "tdi_category": "Technology",
-      "rd_product_area": "Comms-GCN",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-12832",
-      "exit_time": "2025-09-23T07:14:52.166000-06:00",
-      "entry_time": "2025-08-26T11:27:51.455000-06:00",
-      "duration_days": 27.824313784722225,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
-      "in_window": false,
-      "cycle_label": null
     },
     {
       "id": "TDI-12993|2026-05-07T03:35:27.931000-06:00",
@@ -3025,7 +3022,8 @@
           "key": "NBR-9381",
           "summary": "(Discovery) Adopt Progressive Rollout and Rollback Strategy",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-9381"
         }
       ],
       "in_window": true,
@@ -3053,11 +3051,33 @@
           "key": "NBR-9381",
           "summary": "(Discovery) Adopt Progressive Rollout and Rollback Strategy",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-9381"
         }
       ],
       "in_window": true,
       "cycle_label": "260508"
+    },
+    {
+      "id": "TDI-12832|2025-09-23T07:14:52.166000-06:00",
+      "key": "TDI-12832",
+      "summary": "[PF] Adopt STIG compliance scans (non-FedRAMP)",
+      "status": "Cancelled",
+      "fix_versions": [
+        "FY27Q1"
+      ],
+      "assignee": "Hugo Roda",
+      "product": null,
+      "tdi_category": "Technology",
+      "rd_product_area": "Comms-GCN",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-12832",
+      "exit_time": "2025-09-23T07:14:52.166000-06:00",
+      "entry_time": "2025-08-26T11:27:51.455000-06:00",
+      "duration_days": 27.824313784722225,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
+      "in_window": false,
+      "cycle_label": null
     },
     {
       "id": "TDI-12633|2025-08-28T04:49:09.212000-06:00",
@@ -3075,27 +3095,6 @@
       "exit_time": "2025-08-28T04:49:09.212000-06:00",
       "entry_time": "2025-08-11T07:48:16.125000-06:00",
       "duration_days": 16.87561443287037,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
-      "in_window": false,
-      "cycle_label": null
-    },
-    {
-      "id": "TDI-12484|2025-08-22T07:46:50.024000-06:00",
-      "key": "TDI-12484",
-      "summary": "[PF] Adopt new STIG-compliant base images (FedRAMP)",
-      "status": "GA",
-      "fix_versions": [
-        "FY26Q3"
-      ],
-      "assignee": "Hugo Roda",
-      "product": null,
-      "tdi_category": "Technology",
-      "rd_product_area": "Comms-GCN",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-12484",
-      "exit_time": "2025-08-22T07:46:50.024000-06:00",
-      "entry_time": "2025-08-11T07:31:52.753000-06:00",
-      "duration_days": 11.010385081018518,
       "alloc_days": 0.0,
       "discovery_epics": [],
       "in_window": false,
@@ -3123,9 +3122,60 @@
           "key": "VCI-4040",
           "summary": "[VCI] Discovery - Migrate Monitoring to VCIS",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VCI-4040"
         }
       ],
+      "in_window": false,
+      "cycle_label": null
+    },
+    {
+      "id": "TDI-12889|2026-02-24T03:56:59.603000-07:00",
+      "key": "TDI-12889",
+      "summary": "[VA]Studio Callbacks Visibility - Display active studio callbacks on Callback Manager App",
+      "status": "GA",
+      "fix_versions": [
+        "FY27Q2"
+      ],
+      "assignee": "Kumaresh O D",
+      "product": "Studio IVR",
+      "tdi_category": "NPI 3 Incremental Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-12889",
+      "exit_time": "2026-02-24T03:56:59.603000-07:00",
+      "entry_time": "2025-10-14T03:49:49.789000-06:00",
+      "duration_days": 133.04664136574073,
+      "alloc_days": 10.0,
+      "discovery_epics": [
+        {
+          "key": "VS-2410",
+          "summary": "[VA] Discovery - Studio Callbacks Visibility in Call Manager app",
+          "status": "Done",
+          "alloc_days": 10.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2410"
+        }
+      ],
+      "in_window": true,
+      "cycle_label": "260327"
+    },
+    {
+      "id": "TDI-12484|2025-08-22T07:46:50.024000-06:00",
+      "key": "TDI-12484",
+      "summary": "[PF] Adopt new STIG-compliant base images (FedRAMP)",
+      "status": "GA",
+      "fix_versions": [
+        "FY26Q3"
+      ],
+      "assignee": "Hugo Roda",
+      "product": null,
+      "tdi_category": "Technology",
+      "rd_product_area": "Comms-GCN",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-12484",
+      "exit_time": "2025-08-22T07:46:50.024000-06:00",
+      "entry_time": "2025-08-11T07:31:52.753000-06:00",
+      "duration_days": 11.010385081018518,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
       "in_window": false,
       "cycle_label": null
     },
@@ -3147,6 +3197,35 @@
       "duration_days": 1.9727214583333332,
       "alloc_days": 0.0,
       "discovery_epics": [],
+      "in_window": false,
+      "cycle_label": null
+    },
+    {
+      "id": "TDI-12351|2025-11-24T07:38:39.504000-07:00",
+      "key": "TDI-12351",
+      "summary": "Add Google Voices TTS Support",
+      "status": "Preview",
+      "fix_versions": [
+        "FY27Q1"
+      ],
+      "assignee": "S\u00e9rgio Grosso",
+      "product": "Studio IVR",
+      "tdi_category": "NPI 3 Incremental Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-12351",
+      "exit_time": "2025-11-24T07:38:39.504000-07:00",
+      "entry_time": "2025-10-14T03:51:14.562000-06:00",
+      "duration_days": 41.19959423611111,
+      "alloc_days": 5.0,
+      "discovery_epics": [
+        {
+          "key": "VS-2422",
+          "summary": "[Discovery] Add Google voices TTS support in Studio ",
+          "status": "Done",
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2422"
+        }
+      ],
       "in_window": false,
       "cycle_label": null
     },
@@ -3193,51 +3272,19 @@
           "key": "VS-2424",
           "summary": "Discovery - Conversion of Ring Groups API to Queues API",
           "status": "Canceled",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2424"
         },
         {
           "key": "VS-2212",
           "summary": "[Discovery] Replacement of Ring Group and Direct DB access with Queue API ",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2212"
         }
       ],
       "in_window": true,
       "cycle_label": "260327"
-    },
-    {
-      "id": "TDI-12351|2025-11-24T07:38:39.504000-07:00",
-      "key": "TDI-12351",
-      "summary": "Add Google Voices TTS Support",
-      "status": "Preview",
-      "fix_versions": [
-        "FY27Q1"
-      ],
-      "assignee": "S\u00e9rgio Grosso",
-      "product": "Studio IVR",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-12351",
-      "exit_time": "2025-11-24T07:38:39.504000-07:00",
-      "entry_time": "2025-10-14T03:51:14.562000-06:00",
-      "duration_days": 41.19959423611111,
-      "alloc_days": 5.0,
-      "discovery_epics": [
-        {
-          "key": "VS-2422",
-          "summary": "[Discovery] Add Google voices TTS support in Studio ",
-          "status": "Done",
-          "alloc_days": 5.0
-        },
-        {
-          "key": "DES-3384",
-          "summary": "[Discovery] Add Google Voices TTS/STT Support",
-          "status": "Done",
-          "alloc_days": 0.0
-        }
-      ],
-      "in_window": false,
-      "cycle_label": null
     },
     {
       "id": "TDI-12212|2025-09-22T07:52:17.586000-06:00",
@@ -3282,7 +3329,8 @@
           "key": "VPLAT-606",
           "summary": "Dedicated PSTN Lines - Discovery",
           "status": "Done",
-          "alloc_days": 20.0
+          "alloc_days": 20.0,
+          "url": "https://talkdesk.atlassian.net/browse/VPLAT-606"
         }
       ],
       "in_window": true,
@@ -3310,7 +3358,8 @@
           "key": "NBR-9030",
           "summary": "(Discovery) Adopt team-based access control in Numbers",
           "status": "Done",
-          "alloc_days": 20.0
+          "alloc_days": 20.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-9030"
         }
       ],
       "in_window": false,
@@ -3401,7 +3450,8 @@
           "key": "NBR-8536",
           "summary": "(Discovery) Create E911 Compliance Report in Explore",
           "status": "Done",
-          "alloc_days": 15.0
+          "alloc_days": 15.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-8536"
         }
       ],
       "in_window": true,
@@ -3450,11 +3500,33 @@
           "key": "IC-7368",
           "summary": "CAC per Account : Discovery",
           "status": "Done",
-          "alloc_days": 1.0
+          "alloc_days": 1.0,
+          "url": "https://talkdesk.atlassian.net/browse/IC-7368"
         }
       ],
       "in_window": true,
       "cycle_label": "261023"
+    },
+    {
+      "id": "TDI-10366|2024-12-05T05:21:53.411000-07:00",
+      "key": "TDI-10366",
+      "summary": "UUI SIP Header on Outbound calls from Studio",
+      "status": "Available",
+      "fix_versions": [
+        "FY25 Q4"
+      ],
+      "assignee": "Andr\u00e9 Silva",
+      "product": "Voice Platform",
+      "tdi_category": "Product",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-10366",
+      "exit_time": "2024-12-05T05:21:53.411000-07:00",
+      "entry_time": "2024-11-06T04:23:56.355000-07:00",
+      "duration_days": 29.040243703703702,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
+      "in_window": false,
+      "cycle_label": null
     },
     {
       "id": "TDI-10476|2024-12-18T02:55:58.050000-07:00",
@@ -3499,115 +3571,12 @@
           "key": "VS-2606",
           "summary": "Assignment and Dial Support in API Triggered Studio Flows - Discovery",
           "status": "Done",
-          "alloc_days": 7.5
+          "alloc_days": 7.5,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2606"
         }
       ],
       "in_window": true,
       "cycle_label": "260619"
-    },
-    {
-      "id": "TDI-10366|2024-12-05T05:21:53.411000-07:00",
-      "key": "TDI-10366",
-      "summary": "UUI SIP Header on Outbound calls from Studio",
-      "status": "Available",
-      "fix_versions": [
-        "FY25 Q4"
-      ],
-      "assignee": "Andr\u00e9 Silva",
-      "product": "Voice Platform",
-      "tdi_category": "Product",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-10366",
-      "exit_time": "2024-12-05T05:21:53.411000-07:00",
-      "entry_time": "2024-11-06T04:23:56.355000-07:00",
-      "duration_days": 29.040243703703702,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
-      "in_window": false,
-      "cycle_label": null
-    },
-    {
-      "id": "TDI-9301|2025-03-06T12:44:00.582000-07:00",
-      "key": "TDI-9301",
-      "summary": "Stop recording Contact person while call is on hold",
-      "status": "GA",
-      "fix_versions": [
-        "FY26Q2"
-      ],
-      "assignee": "Clare Lee",
-      "product": "Voice Platform",
-      "tdi_category": "NPI 2 Major Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-9301",
-      "exit_time": "2025-03-06T12:44:00.582000-07:00",
-      "entry_time": "2025-01-06T08:15:02.956000-07:00",
-      "duration_days": 59.1867780787037,
-      "alloc_days": 0.0,
-      "discovery_epics": [
-        {
-          "key": "VCI-3188",
-          "summary": "[VCI]\u00a0Stop recording Contact person while call is on hold - Discovery",
-          "status": "Done",
-          "alloc_days": 0.0
-        }
-      ],
-      "in_window": false,
-      "cycle_label": null
-    },
-    {
-      "id": "TDI-9381|2025-03-10T09:33:21.734000-06:00",
-      "key": "TDI-9381",
-      "summary": "Proof of Concept: Milestone 1 of Voice 2.0",
-      "status": "GA",
-      "fix_versions": [
-        "FY26Q1"
-      ],
-      "assignee": "Kaustubh Inamdar",
-      "product": "Voice Platform",
-      "tdi_category": "NPI 2 Major Customer Value",
-      "rd_product_area": "Comms-VoiceIntegrations",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-9381",
-      "exit_time": "2025-03-10T09:33:21.734000-06:00",
-      "entry_time": "2024-06-11T07:28:07.615000-06:00",
-      "duration_days": 272.0869689699074,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
-      "in_window": false,
-      "cycle_label": null
-    },
-    {
-      "id": "TDI-9654|2025-05-08T07:36:56.330000-06:00",
-      "key": "TDI-9654",
-      "summary": "Multi-party Consults",
-      "status": "GA",
-      "fix_versions": [
-        "FY27Q2"
-      ],
-      "assignee": "Bruno Carreira",
-      "product": "Voice Platform",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-9654",
-      "exit_time": "2025-05-08T07:36:56.330000-06:00",
-      "entry_time": "2024-07-22T18:12:15.756000-06:00",
-      "duration_days": 289.5588029398148,
-      "alloc_days": 20.0,
-      "discovery_epics": [
-        {
-          "key": "VOICE-12118",
-          "summary": "[Product discovery] - Multi-party consults",
-          "status": "Done",
-          "alloc_days": 0.0
-        },
-        {
-          "key": "VCI-2874",
-          "summary": "[VCI] Discovery Multi party consults ",
-          "status": "Done",
-          "alloc_days": 20.0
-        }
-      ],
-      "in_window": false,
-      "cycle_label": null
     },
     {
       "id": "TDI-10041|2025-09-23T10:10:51.407000-06:00",
@@ -3631,7 +3600,8 @@
           "key": "NBR-11735",
           "summary": "(Discovery) Numbers simplify architecture: migrate the audit log publishing from RabbitMQ to Kafka",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11735"
         }
       ],
       "in_window": false,
@@ -3659,7 +3629,8 @@
           "key": "NBR-11735",
           "summary": "(Discovery) Numbers simplify architecture: migrate the audit log publishing from RabbitMQ to Kafka",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11735"
         }
       ],
       "in_window": false,
@@ -3687,7 +3658,8 @@
           "key": "NBR-11735",
           "summary": "(Discovery) Numbers simplify architecture: migrate the audit log publishing from RabbitMQ to Kafka",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11735"
         }
       ],
       "in_window": true,
@@ -3715,7 +3687,8 @@
           "key": "NBR-11735",
           "summary": "(Discovery) Numbers simplify architecture: migrate the audit log publishing from RabbitMQ to Kafka",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11735"
         }
       ],
       "in_window": true,
@@ -3743,11 +3716,33 @@
           "key": "NBR-11735",
           "summary": "(Discovery) Numbers simplify architecture: migrate the audit log publishing from RabbitMQ to Kafka",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11735"
         }
       ],
       "in_window": true,
       "cycle_label": "260731"
+    },
+    {
+      "id": "TDI-9381|2025-03-10T09:33:21.734000-06:00",
+      "key": "TDI-9381",
+      "summary": "Proof of Concept: Milestone 1 of Voice 2.0",
+      "status": "GA",
+      "fix_versions": [
+        "FY26Q1"
+      ],
+      "assignee": "Kaustubh Inamdar",
+      "product": "Voice Platform",
+      "tdi_category": "NPI 2 Major Customer Value",
+      "rd_product_area": "Comms-VoiceIntegrations",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-9381",
+      "exit_time": "2025-03-10T09:33:21.734000-06:00",
+      "entry_time": "2024-06-11T07:28:07.615000-06:00",
+      "duration_days": 272.0869689699074,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
+      "in_window": false,
+      "cycle_label": null
     },
     {
       "id": "TDI-9321|2024-11-26T03:12:17.264000-07:00",
@@ -3767,6 +3762,71 @@
       "duration_days": 27.759897847222224,
       "alloc_days": 0.0,
       "discovery_epics": [],
+      "in_window": false,
+      "cycle_label": null
+    },
+    {
+      "id": "TDI-9301|2025-03-06T12:44:00.582000-07:00",
+      "key": "TDI-9301",
+      "summary": "Stop recording Contact person while call is on hold",
+      "status": "GA",
+      "fix_versions": [
+        "FY26Q2"
+      ],
+      "assignee": "Clare Lee",
+      "product": "Voice Platform",
+      "tdi_category": "NPI 2 Major Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-9301",
+      "exit_time": "2025-03-06T12:44:00.582000-07:00",
+      "entry_time": "2025-01-06T08:15:02.956000-07:00",
+      "duration_days": 59.1867780787037,
+      "alloc_days": 0.0,
+      "discovery_epics": [
+        {
+          "key": "VCI-3188",
+          "summary": "[VCI]\u00a0Stop recording Contact person while call is on hold - Discovery",
+          "status": "Done",
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VCI-3188"
+        }
+      ],
+      "in_window": false,
+      "cycle_label": null
+    },
+    {
+      "id": "TDI-9654|2025-05-08T07:36:56.330000-06:00",
+      "key": "TDI-9654",
+      "summary": "Multi-party Consults",
+      "status": "GA",
+      "fix_versions": [
+        "FY27Q2"
+      ],
+      "assignee": "Bruno Carreira",
+      "product": "Voice Platform",
+      "tdi_category": "NPI 3 Incremental Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-9654",
+      "exit_time": "2025-05-08T07:36:56.330000-06:00",
+      "entry_time": "2024-07-22T18:12:15.756000-06:00",
+      "duration_days": 289.5588029398148,
+      "alloc_days": 20.0,
+      "discovery_epics": [
+        {
+          "key": "VOICE-12118",
+          "summary": "[Product discovery] - Multi-party consults",
+          "status": "Done",
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-12118"
+        },
+        {
+          "key": "VCI-2874",
+          "summary": "[VCI] Discovery Multi party consults ",
+          "status": "Done",
+          "alloc_days": 20.0,
+          "url": "https://talkdesk.atlassian.net/browse/VCI-2874"
+        }
+      ],
       "in_window": false,
       "cycle_label": null
     },
@@ -3834,13 +3894,15 @@
           "key": "VS-2136",
           "summary": "[Discovery] Duplicate Callbacks - VA ",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2136"
         },
         {
           "key": "VS-2035",
           "summary": "[Discovery] Duplicate Callbacks",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VS-2035"
         }
       ],
       "in_window": false,
@@ -3868,13 +3930,15 @@
           "key": "NBR-11160",
           "summary": "(Discovery) Improve Delete Numbers Process for Terminated Accounts",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11160"
         },
         {
           "key": "NBR-10379",
           "summary": "(Discovery) Improve Delete Numbers Process for Active Accounts",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-10379"
         }
       ],
       "in_window": true,
@@ -3902,13 +3966,15 @@
           "key": "NBR-11160",
           "summary": "(Discovery) Improve Delete Numbers Process for Terminated Accounts",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-11160"
         },
         {
           "key": "NBR-10379",
           "summary": "(Discovery) Improve Delete Numbers Process for Active Accounts",
           "status": "Done",
-          "alloc_days": 5.0
+          "alloc_days": 5.0,
+          "url": "https://talkdesk.atlassian.net/browse/NBR-10379"
         }
       ],
       "in_window": true,
@@ -3936,30 +4002,10 @@
           "key": "VOICE-12346",
           "summary": "Technical discovery on Omnissa VDI (Setup + TDD)",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-12346"
         }
       ],
-      "in_window": false,
-      "cycle_label": null
-    },
-    {
-      "id": "TDI-8970|2024-12-18T02:55:31.269000-07:00",
-      "key": "TDI-8970",
-      "summary": "Wrap-up Settings: Bulk Actions",
-      "status": "GA",
-      "fix_versions": [
-        "FY26Q1"
-      ],
-      "assignee": "Cheng Li",
-      "product": "Conversations Voice Channel",
-      "tdi_category": "Product",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-8970",
-      "exit_time": "2024-12-18T02:55:31.269000-07:00",
-      "entry_time": "2024-06-11T04:08:42.702000-06:00",
-      "duration_days": 189.99083989583332,
-      "alloc_days": 0.0,
-      "discovery_epics": [],
       "in_window": false,
       "cycle_label": null
     },
@@ -3985,36 +4031,23 @@
       "cycle_label": "260508"
     },
     {
-      "id": "TDI-8564|2024-12-13T06:55:34.735000-07:00",
-      "key": "TDI-8564",
-      "summary": "Auto save Wrap-Up Form when timeout expires",
+      "id": "TDI-8970|2024-12-18T02:55:31.269000-07:00",
+      "key": "TDI-8970",
+      "summary": "Wrap-up Settings: Bulk Actions",
       "status": "GA",
       "fix_versions": [
         "FY26Q1"
       ],
-      "assignee": "Ana Borges",
+      "assignee": "Cheng Li",
       "product": "Conversations Voice Channel",
-      "tdi_category": "NPI 2 Major Customer Value",
+      "tdi_category": "Product",
       "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-8564",
-      "exit_time": "2024-12-13T06:55:34.735000-07:00",
-      "entry_time": "2024-06-11T04:08:24.842000-06:00",
-      "duration_days": 185.1577533912037,
+      "url": "https://talkdesk.atlassian.net/browse/TDI-8970",
+      "exit_time": "2024-12-18T02:55:31.269000-07:00",
+      "entry_time": "2024-06-11T04:08:42.702000-06:00",
+      "duration_days": 189.99083989583332,
       "alloc_days": 0.0,
-      "discovery_epics": [
-        {
-          "key": "VOICE-12002",
-          "summary": "[Product discovery] Auto save Wrap-Up Form in activity details",
-          "status": "Done",
-          "alloc_days": 0.0
-        },
-        {
-          "key": "VOICE-12001",
-          "summary": "[Product discovery] Auto save Wrap-Up Form when timeout expires",
-          "status": "Done",
-          "alloc_days": 0.0
-        }
-      ],
+      "discovery_epics": [],
       "in_window": false,
       "cycle_label": null
     },
@@ -4040,19 +4073,58 @@
           "key": "VOICE-12000",
           "summary": "[Product discovery] VDI with direct audio",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-12000"
         },
         {
           "key": "VOICE-11920",
           "summary": "Discovery about UCSDK & PoC understanding",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-11920"
         },
         {
           "key": "VOICE-11010",
           "summary": "Technical discovery on Citrix VDI (Setup + TDD)",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-11010"
+        }
+      ],
+      "in_window": false,
+      "cycle_label": null
+    },
+    {
+      "id": "TDI-8564|2024-12-13T06:55:34.735000-07:00",
+      "key": "TDI-8564",
+      "summary": "Auto save Wrap-Up Form when timeout expires",
+      "status": "GA",
+      "fix_versions": [
+        "FY26Q1"
+      ],
+      "assignee": "Ana Borges",
+      "product": "Conversations Voice Channel",
+      "tdi_category": "NPI 2 Major Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-8564",
+      "exit_time": "2024-12-13T06:55:34.735000-07:00",
+      "entry_time": "2024-06-11T04:08:24.842000-06:00",
+      "duration_days": 185.1577533912037,
+      "alloc_days": 0.0,
+      "discovery_epics": [
+        {
+          "key": "VOICE-12002",
+          "summary": "[Product discovery] Auto save Wrap-Up Form in activity details",
+          "status": "Done",
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-12002"
+        },
+        {
+          "key": "VOICE-12001",
+          "summary": "[Product discovery] Auto save Wrap-Up Form when timeout expires",
+          "status": "Done",
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-12001"
         }
       ],
       "in_window": false,
@@ -4122,34 +4194,6 @@
       "cycle_label": null
     },
     {
-      "id": "TDI-8021|2025-03-10T13:55:16.075000-06:00",
-      "key": "TDI-8021",
-      "summary": "Wrap-up Form After Internal Transfers",
-      "status": "GA",
-      "fix_versions": [
-        "FY26Q3"
-      ],
-      "assignee": "Jos\u00e9 Miguel Guilherme",
-      "product": "Conversations Voice Channel",
-      "tdi_category": "NPI 3 Incremental Customer Value",
-      "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-8021",
-      "exit_time": "2025-03-10T13:55:16.075000-06:00",
-      "entry_time": "2025-02-27T09:30:29.821000-07:00",
-      "duration_days": 11.142202013888888,
-      "alloc_days": 0.0,
-      "discovery_epics": [
-        {
-          "key": "VOICE-11999",
-          "summary": "[Product discovery] Wrap-up after internal transfers",
-          "status": "Done",
-          "alloc_days": 0.0
-        }
-      ],
-      "in_window": false,
-      "cycle_label": null
-    },
-    {
       "id": "TDI-7844|2025-01-15T09:43:18.126000-07:00",
       "key": "TDI-7844",
       "summary": "[PF] New Numbers UI - rollout to existing accounts",
@@ -4192,30 +4236,39 @@
           "key": "VCI-776",
           "summary": "Blind Transfer - Blind to Ring Group discovery",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VCI-776"
         }
       ],
       "in_window": true,
       "cycle_label": "260327"
     },
     {
-      "id": "TDI-4790|2025-05-16T07:54:50.505000-06:00",
-      "key": "TDI-4790",
-      "summary": "Priority level on Conversations app",
+      "id": "TDI-8021|2025-03-10T13:55:16.075000-06:00",
+      "key": "TDI-8021",
+      "summary": "Wrap-up Form After Internal Transfers",
       "status": "GA",
       "fix_versions": [
-        "FY27Q3"
+        "FY26Q3"
       ],
-      "assignee": "Bruno Carreira",
-      "product": "Conversations",
+      "assignee": "Jos\u00e9 Miguel Guilherme",
+      "product": "Conversations Voice Channel",
       "tdi_category": "NPI 3 Incremental Customer Value",
       "rd_product_area": "Comms-VoiceCore",
-      "url": "https://talkdesk.atlassian.net/browse/TDI-4790",
-      "exit_time": "2025-05-16T07:54:50.505000-06:00",
-      "entry_time": "2025-03-18T10:18:56.601000-06:00",
-      "duration_days": 58.899929444444446,
+      "url": "https://talkdesk.atlassian.net/browse/TDI-8021",
+      "exit_time": "2025-03-10T13:55:16.075000-06:00",
+      "entry_time": "2025-02-27T09:30:29.821000-07:00",
+      "duration_days": 11.142202013888888,
       "alloc_days": 0.0,
-      "discovery_epics": [],
+      "discovery_epics": [
+        {
+          "key": "VOICE-11999",
+          "summary": "[Product discovery] Wrap-up after internal transfers",
+          "status": "Done",
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-11999"
+        }
+      ],
       "in_window": false,
       "cycle_label": null
     },
@@ -4241,9 +4294,31 @@
           "key": "VOICE-13001",
           "summary": "Discovery - Headset Call Controls",
           "status": "Done",
-          "alloc_days": 0.0
+          "alloc_days": 0.0,
+          "url": "https://talkdesk.atlassian.net/browse/VOICE-13001"
         }
       ],
+      "in_window": false,
+      "cycle_label": null
+    },
+    {
+      "id": "TDI-4790|2025-05-16T07:54:50.505000-06:00",
+      "key": "TDI-4790",
+      "summary": "Priority level on Conversations app",
+      "status": "GA",
+      "fix_versions": [
+        "FY27Q3"
+      ],
+      "assignee": "Bruno Carreira",
+      "product": "Conversations",
+      "tdi_category": "NPI 3 Incremental Customer Value",
+      "rd_product_area": "Comms-VoiceCore",
+      "url": "https://talkdesk.atlassian.net/browse/TDI-4790",
+      "exit_time": "2025-05-16T07:54:50.505000-06:00",
+      "entry_time": "2025-03-18T10:18:56.601000-06:00",
+      "duration_days": 58.899929444444446,
+      "alloc_days": 0.0,
+      "discovery_epics": [],
       "in_window": false,
       "cycle_label": null
     }
@@ -4279,10 +4354,10 @@
         "TDI-15723|2026-05-04T07:10:18.860000-06:00",
         "TDI-15608|2026-04-29T01:56:48.644000-06:00",
         "TDI-13214|2026-04-30T05:06:10.686000-06:00",
-        "TDI-15293|2026-04-30T05:09:00.595000-06:00",
         "TDI-15087|2026-04-28T04:43:38.307000-06:00",
-        "TDI-14483|2026-04-23T03:58:06.298000-06:00",
+        "TDI-15293|2026-04-30T05:09:00.595000-06:00",
         "TDI-14482|2026-04-09T04:21:56.787000-06:00",
+        "TDI-14483|2026-04-23T03:58:06.298000-06:00",
         "TDI-13791|2026-04-28T04:44:35.395000-06:00",
         "TDI-12993|2026-05-07T03:35:27.931000-06:00",
         "TDI-12993|2026-05-07T05:16:55.596000-06:00",
@@ -4311,17 +4386,17 @@
         "TDI-15175|2026-05-08T08:37:01.220000-06:00",
         "TDI-15143|2026-05-13T09:14:53.062000-06:00",
         "TDI-14977|2026-05-08T04:31:07.400000-06:00",
+        "TDI-15939|2026-06-09T09:15:16.742000-06:00",
         "TDI-15811|2026-06-09T04:11:42.933000-06:00",
+        "TDI-15709|2026-06-03T17:37:38.880000-06:00",
         "TDI-15704|2026-06-03T17:46:49.174000-06:00",
         "TDI-15702|2026-05-08T04:31:22.183000-06:00",
-        "TDI-15939|2026-06-09T09:15:16.742000-06:00",
-        "TDI-15646|2026-06-08T04:09:45.309000-06:00",
         "TDI-15660|2026-05-08T04:31:25.367000-06:00",
         "TDI-15660|2026-06-03T17:32:34.676000-06:00",
-        "TDI-15709|2026-06-03T17:37:38.880000-06:00",
         "TDI-15561|2026-06-09T08:28:32.210000-06:00",
-        "TDI-15411|2026-06-03T10:37:17.042000-06:00",
         "TDI-15434|2026-06-04T21:15:28.780000-06:00",
+        "TDI-15411|2026-06-03T10:37:17.042000-06:00",
+        "TDI-15646|2026-06-08T04:09:45.309000-06:00",
         "TDI-13791|2026-06-08T09:51:51.034000-06:00",
         "TDI-10363|2026-05-08T08:37:03.655000-06:00",
         "TDI-10041|2026-06-17T09:21:07.166000-06:00"
@@ -4385,12 +4460,12 @@
         "TDI-15838|2026-09-01T23:59:39.314000-06:00",
         "TDI-15713|2026-08-04T00:42:25.173000-06:00",
         "TDI-15711|2026-09-03T11:57:16.446000-06:00",
+        "TDI-15985|2026-08-12T09:20:12.215000-06:00",
         "TDI-16147|2026-09-01T23:09:46.198000-06:00",
         "TDI-16344|2026-09-07T08:20:26.247000-06:00",
-        "TDI-15985|2026-08-12T09:20:12.215000-06:00",
-        "TDI-15950|2026-09-09T07:42:22.884000-06:00",
         "TDI-15631|2026-08-24T05:23:45.293000-06:00",
         "TDI-15631|2026-09-03T04:14:10.923000-06:00",
+        "TDI-15950|2026-09-09T07:42:22.884000-06:00",
         "TDI-14213|2026-08-24T05:20:27.375000-06:00",
         "TDI-14026|2026-08-24T00:39:45.039000-06:00",
         "TDI-13081|2026-08-31T09:42:17.788000-06:00"

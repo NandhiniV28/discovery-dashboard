@@ -221,15 +221,23 @@ def run(zone=ZONE, window_cycles=WINDOW_CYCLES, progress=None):
     epics_by_tdi = {}
     if tdi_keys:
         keys_str = ",".join(tdi_keys)
-        epic_jql = f'parent in ({keys_str}) and issuetype = Epic and summary ~ "discovery"'
+        # Exclude the Design team's project (DES) — their discovery epics don't
+        # count toward this zone's discovery epic count or allocation totals.
+        epic_jql = (
+            f'parent in ({keys_str}) and issuetype = Epic and summary ~ "discovery" '
+            f'and project != DES'
+        )
         epic_issues = _search_all(epic_jql, "summary,status,customfield_15467,parent")
         for i in epic_issues:
+            if i["key"].startswith("DES-"):
+                continue  # belt-and-suspenders in case the JQL exclusion doesn't match
             f = i["fields"]
             parent_key = (f.get("parent") or {}).get("key")
             alloc = float(f["customfield_15467"]) if f.get("customfield_15467") else 0.0
             alloc_by_tdi[parent_key] = alloc_by_tdi.get(parent_key, 0.0) + alloc
             epics_by_tdi.setdefault(parent_key, []).append({
-                "key": i["key"], "summary": f["summary"], "status": f["status"]["name"], "alloc_days": alloc,
+                "key": i["key"], "summary": f["summary"], "status": f["status"]["name"],
+                "alloc_days": alloc, "url": f"{JIRA_BASE}/browse/{i['key']}",
             })
 
     for t in transitions:

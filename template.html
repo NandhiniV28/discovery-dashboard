@@ -52,7 +52,7 @@
   #refresh-btn:disabled { opacity: 0.6; cursor: default; }
   #refresh-status { font-size: 11px; color: var(--text-muted); margin-top: 6px; text-align: right; max-width: 220px; }
 
-  .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+  .kpi-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
   .stat-tile {
     background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
     padding: 16px 18px; cursor: pointer; transition: box-shadow 0.15s;
@@ -102,7 +102,7 @@
   #drilldown-table a:hover { text-decoration: underline; }
 
   @media (max-width: 900px) {
-    .kpi-row { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row { grid-template-columns: repeat(1, 1fr); }
   }
 </style>
 </head>
@@ -125,28 +125,22 @@
   </header>
 
   <div class="kpi-row">
-    <div class="stat-tile" id="tile-in-discovery">
-      <div class="label">TDIs currently in "In Discovery"</div>
-      <div class="value" id="kpi-in-discovery">–</div>
-      <div class="sub">Live snapshot</div>
+    <div class="stat-tile" id="tile-bucket-low">
+      <div class="label">Discovery epics completed: 1–5 days</div>
+      <div class="value" id="kpi-bucket-low">–</div>
+      <div class="sub" id="kpi-bucket-low-sub"></div>
       <div class="click-hint">Click to see the list →</div>
     </div>
-    <div class="stat-tile" id="tile-avg-duration">
-      <div class="label">Avg. time in Discovery (this 3S)</div>
-      <div class="value" id="kpi-avg-duration">–<span class="unit">days</span></div>
-      <div class="sub" id="kpi-avg-duration-sub"></div>
+    <div class="stat-tile" id="tile-bucket-mid">
+      <div class="label">Discovery epics completed: 6–10 days</div>
+      <div class="value" id="kpi-bucket-mid">–</div>
+      <div class="sub" id="kpi-bucket-mid-sub"></div>
       <div class="click-hint">Click to see the list →</div>
     </div>
-    <div class="stat-tile" id="tile-total-transitions">
-      <div class="label">Discoveries completed (this 3S)</div>
-      <div class="value" id="kpi-total-transitions">–</div>
-      <div class="sub" id="kpi-total-transitions-sub"></div>
-      <div class="click-hint">Click to see the list →</div>
-    </div>
-    <div class="stat-tile" id="tile-total-alloc">
-      <div class="label">Discovery allocation (this 3S)</div>
-      <div class="value" id="kpi-total-alloc">–<span class="unit">days</span></div>
-      <div class="sub" id="kpi-total-alloc-sub"></div>
+    <div class="stat-tile" id="tile-bucket-high">
+      <div class="label">Discovery epics completed: &gt;10 days</div>
+      <div class="value" id="kpi-bucket-high">–</div>
+      <div class="sub" id="kpi-bucket-high-sub"></div>
       <div class="click-hint">Click to see the list →</div>
     </div>
   </div>
@@ -188,7 +182,7 @@
   </div>
 
   <div class="note" style="margin-top: -4px;">
-    Methodology: TDIs = Jira project <strong>TDI</strong>, issue type Feature, Zone = Communications Services, <strong>with an assignee and a target quarter (Fix Version) both set</strong> — this matches the GitHub release dashboard's count exactly (52 vs. this dashboard's earlier unfiltered 67) and is applied consistently across every metric here. Discovery allocation = sum of "Allocation in Days" on child Epics (any project) whose title contains "discovery" and whose parent is the TDI. "Refresh from Jira" requires running the local server (<code>python3 server.py</code>) in this folder — opened as a plain file, the button will tell you so instead of silently failing.
+    Methodology: TDIs = Jira project <strong>TDI</strong>, issue type Feature, Zone = Communications Services, <strong>with an assignee and a target quarter (Fix Version) both set</strong> — this matches the GitHub release dashboard's count exactly (52 vs. this dashboard's earlier unfiltered 67) and is applied consistently across every metric here. Discovery allocation = sum of "Allocation in Days" on child Epics (any project) whose title contains "discovery" and whose parent is the TDI, <strong>excluding epics from the Design team's project (DES)</strong>. The three tiles above bucket the current 3S cycle's completed discovery epics by their allocation-in-days value (1–5 / 6–10 / &gt;10); epics with no allocation set aren't counted in any bucket. "Refresh from Jira" requires running the local server (<code>python3 server.py</code>) in this folder — opened as a plain file, the button will tell you so instead of silently failing.
   </div>
 
 </div>
@@ -228,22 +222,22 @@ document.getElementById('drilldown-close').addEventListener('click', () => {
 
 function tdiLink(r) { return `<a href="${r.url}" target="_blank">${r.key}</a>`; }
 
-function drilldownFromCurrent(list, label) {
-  openDrilldown(`TDIs in "In Discovery" — ${label}`, `${list.length} issue(s)`,
-    ['Key', 'Summary', 'Product', 'Assignee', 'Quarter'],
-    list.map(r => [tdiLink(r), r.summary, r.product || '–', r.assignee || '–', (r.fix_versions||[]).join(', ') || '–']));
-}
 function drilldownFromTransitions(list, label) {
   openDrilldown(`Discoveries completed — ${label}`, `${list.length} issue(s)`,
     ['Key', 'Summary', 'Exit date', 'Duration (days)', 'Allocation (days)'],
     list.map(r => [tdiLink(r), r.summary, fmtDate(r.exit_time), r.duration_days!=null?fmt(r.duration_days):'–', fmt(r.alloc_days)]));
 }
+function epicLink(e) { return `<a href="${e.url}" target="_blank">${e.key}</a>`; }
+function drilldownFromEpics(list, label) {
+  openDrilldown(`Discovery epics — ${label}`, `${list.length} epic(s)`,
+    ['Epic', 'Summary', 'Allocation (days)', 'Parent TDI'],
+    list.map(e => [epicLink(e), e.summary, fmt(e.alloc_days), tdiLink({key: e.tdi_key, url: `https://talkdesk.atlassian.net/browse/${e.tdi_key}`}) + ' ' + (e.tdi_summary || '')]));
+}
 
 // ---------- rendering ----------
-let currentInDiscovery = [], allTransitions = [], windowTransitions = [], cycleAgg = [], currentCycle = null;
+let allTransitions = [], windowTransitions = [], cycleAgg = [], currentCycle = null;
 
 function recomputeAndRender() {
-  currentInDiscovery = RAW.current_in_discovery;
   allTransitions = RAW.transitions;
   windowTransitions = allTransitions.filter(t => t.in_window);
 
@@ -261,18 +255,21 @@ function recomputeAndRender() {
   });
   currentCycle = cycleAgg.find(c => c.in_progress) || cycleAgg[cycleAgg.length - 1];
 
-  // KPIs — top 4 tiles always reflect the CURRENT (in-progress) 3S cycle
-  document.getElementById('kpi-in-discovery').textContent = currentInDiscovery.length;
+  // KPIs — top 3 tiles bucket the CURRENT (in-progress) 3S cycle's completed
+  // discovery epics by their "Allocation in Days" value.
+  const currentEpics = currentCycle._issues.flatMap(t => (t.discovery_epics || []).map(e => ({...e, tdi_key: t.key, tdi_summary: t.summary})));
+  const bucketLow = currentEpics.filter(e => e.alloc_days > 0 && e.alloc_days <= 5);
+  const bucketMid = currentEpics.filter(e => e.alloc_days > 5 && e.alloc_days <= 10);
+  const bucketHigh = currentEpics.filter(e => e.alloc_days > 10);
+  currentCycle._epicBuckets = { low: bucketLow, mid: bucketMid, high: bucketHigh };
 
-  const avgDur = currentCycle.avg_duration || 0;
-  document.getElementById('kpi-avg-duration').innerHTML = fmt(avgDur) + '<span class="unit">days</span>';
-  document.getElementById('kpi-avg-duration-sub').textContent = `≈ ${fmt(avgDur/7)} weeks · 3S ${currentCycle.label} (${fmtDate(currentCycle.start)} – ${fmtDate(currentCycle.end)})`;
-
-  document.getElementById('kpi-total-transitions').textContent = currentCycle.count;
-  document.getElementById('kpi-total-transitions-sub').textContent = `In Discovery → Ready to Plan · 3S ${currentCycle.label}`;
-
-  document.getElementById('kpi-total-alloc').innerHTML = fmt(currentCycle.alloc_sum) + '<span class="unit">days</span>';
-  document.getElementById('kpi-total-alloc-sub').textContent = `Sum on linked DISCOVERY epics · 3S ${currentCycle.label}`;
+  const subText = `3S ${currentCycle.label} (${fmtDate(currentCycle.start)} – ${fmtDate(currentCycle.end)})`;
+  document.getElementById('kpi-bucket-low').textContent = bucketLow.length;
+  document.getElementById('kpi-bucket-low-sub').textContent = subText;
+  document.getElementById('kpi-bucket-mid').textContent = bucketMid.length;
+  document.getElementById('kpi-bucket-mid-sub').textContent = subText;
+  document.getElementById('kpi-bucket-high').textContent = bucketHigh.length;
+  document.getElementById('kpi-bucket-high-sub').textContent = subText;
 
   renderTable();
   buildChart('chart-count', cycleAgg.map(c => c.count), {
@@ -360,10 +357,9 @@ function buildChart(containerId, values, opts) {
 }
 
 // ---------- KPI tile click -> drill-down ----------
-document.getElementById('tile-in-discovery').addEventListener('click', () => drilldownFromCurrent(currentInDiscovery, 'all'));
-document.getElementById('tile-avg-duration').addEventListener('click', () => drilldownFromTransitions(currentCycle._issues, `3S ${currentCycle.label} (current)`));
-document.getElementById('tile-total-transitions').addEventListener('click', () => drilldownFromTransitions(currentCycle._issues, `3S ${currentCycle.label} (current)`));
-document.getElementById('tile-total-alloc').addEventListener('click', () => drilldownFromTransitions(currentCycle._issues.filter(t => t.alloc_days > 0), `3S ${currentCycle.label} (current), allocation > 0`));
+document.getElementById('tile-bucket-low').addEventListener('click', () => drilldownFromEpics(currentCycle._epicBuckets.low, `1–5 days, 3S ${currentCycle.label} (current)`));
+document.getElementById('tile-bucket-mid').addEventListener('click', () => drilldownFromEpics(currentCycle._epicBuckets.mid, `6–10 days, 3S ${currentCycle.label} (current)`));
+document.getElementById('tile-bucket-high').addEventListener('click', () => drilldownFromEpics(currentCycle._epicBuckets.high, `>10 days, 3S ${currentCycle.label} (current)`));
 
 // ---------- refresh from Jira ----------
 const isGithubPages = location.hostname.endsWith('github.io');
